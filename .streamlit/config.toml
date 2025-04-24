@@ -1,0 +1,9 @@
+[theme]
+base="dark"
+layout="wide"
+
+[server]
+headless = true
+
+[ui]
+hideSidebarNav = true
