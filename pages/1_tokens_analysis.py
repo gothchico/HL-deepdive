@@ -32,7 +32,7 @@ for s in volume_data.values():
     total_volume = total_volume.add(pd.Series(s), fill_value=0)
 
 # UI
-st.title("Hyperliquid Deep Dive")
+# st.title("Hyperliquid Deep Dive")
 all_tokens = sorted(listing_df["Token"])
 selected = st.multiselect("Select tokens:", all_tokens, default=["ETH", "TRUMP", "FARTCOIN", "CHILLGUY", "BERA"])
 show_seasons = st.checkbox("Show Season Shading", value=True)
