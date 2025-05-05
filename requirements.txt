@@ -2,4 +2,9 @@ streamlit
 plotly
 pandas
 requests
+numpy
+scipy
+statsmodels
+sklearn
+matplotlib
 
