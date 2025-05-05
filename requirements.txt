@@ -5,6 +5,6 @@ requests
 numpy
 scipy
 statsmodels
-sklearn
+scikit-learn
 matplotlib
 
