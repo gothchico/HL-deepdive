@@ -10,5 +10,7 @@ def main():
         st.page_link('pages/5_vault_analysis.py', label='HLP Vault Analysis', icon='🏦')
         st.page_link('pages/6_hybrid_analysis.py', label='Hybrid Analysis', icon='🧬')
         st.page_link('pages/7_regression_analysis.py', label='Regression Analysis', icon='📊')
+        st.page_link('pages/8_user_wallet_analyses.py', label='Volume Analysis', icon='📊')
+
 if __name__ == '__main__':
     main()
