@@ -7,4 +7,5 @@ scipy
 statsmodels
 scikit-learn
 matplotlib
-hyperliquid
+git+https://github.com/hyperliquid-dex/hyperliquid-python-sdk.git
+
