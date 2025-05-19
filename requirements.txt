@@ -7,4 +7,4 @@ scipy
 statsmodels
 scikit-learn
 matplotlib
-
+hyperliquid
