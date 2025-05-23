@@ -51,8 +51,9 @@ def main():
     - **Total Users**: Number of unique traders
     - **Total Volume**: Combined trading volume in USD
     - **Total Trades**: Total number of trades executed
+    - **Avg Trade Size**: Average size of each trade in USD
     """)
-    col1, col2, col3 = st.columns([1, 1, 1])
+    col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
     metric_style = "font-size: 2.2em; font-weight: bold; max-width: 100%; overflow-wrap: anywhere; margin-top: 0.2em; margin-bottom: 0.2em; display: inline-block;"
     with col1:
         st.markdown(f"""
@@ -78,6 +79,16 @@ def main():
             <span style='font-size: 1.2em;'>Total Trades</span><br>
             <span style='{metric_style}'>
                 {int(data['trade_count']['value'].sum()):,}
+            </span>
+        </div>
+        """, unsafe_allow_html=True)
+    with col4:
+        avg_trade_size = data['daily_volume']['daily_usd_volume'].sum() / data['trade_count']['value'].sum()
+        st.markdown(f"""
+        <div style='text-align: center;'>
+            <span style='font-size: 1.2em;'>Avg Trade Size</span><br>
+            <span style='{metric_style}'>
+                ${avg_trade_size:,.2f}
             </span>
         </div>
         """, unsafe_allow_html=True)
