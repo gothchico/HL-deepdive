@@ -9,4 +9,5 @@ scikit-learn
 matplotlib
 git+https://github.com/hyperliquid-dex/hyperliquid-python-sdk.git
 streamlit-autorefresh
+hyperliquid
 
