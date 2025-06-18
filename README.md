@@ -17,5 +17,5 @@ A simple app showing some analysis of the Hyperliquid Protocol.
 2. Run the app
 
    ```
-   $ streamlit run streamlit.py
+   $ streamlit run streamlit_app.py
    ```
